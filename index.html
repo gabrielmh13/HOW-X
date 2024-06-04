@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denuncie Já</title>
+
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .header {
+            width: 50vw;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        h1 {
+            font-size: 2rem;
+            color: red;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        input {
+            width: 20rem;
+            height: 1.5rem;
+            background-color: rgb(194, 194, 194);
+        }
+
+        button {
+            width: 10rem;
+            height: 2rem;
+            background-color: rgb(194, 194, 194);
+            border: none;
+            cursor: pointer;
+        }
+
+        .separator {
+            width: 100%;
+            height: 1px;
+            background-color: red;
+        }
+
+        footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Denuncie, Já</h1>
+            <p>
+                Aguá parada na casa do seu vizinho ou em alguma localidade do seu bairro? 
+                Denuncie por esse canal direto com a prefeitura que iremos direcionar um agente para checagem da denúncia.
+            </p>
+        </header>
+        <form action="">
+            <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                <label for="celular">Número do celular:</label>
+                <input type="text" name="phone">
+            </div>
+
+            <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                <label for="celular">Endereço da Denúncia:</label>
+                <input type="text" name="address">
+            </div>
+
+            <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                <label for="celular">CEP</label>
+                <input type="text" name="zipcode">
+            </div>
+
+            <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                <label for="celular">Observação da denúncia:</label>
+                <input type="text" name="obs">
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <p style="font-weight: bold;">
+            Fique tranquilo/a seus dados estarão protegidos, apenas a prefeitura terá acesso ao seu número de telefone.
+        </p>
+
+        <div class="separator"></div>
+
+        <footer>
+            <p style="font-weight: bold;">
+                INFORMAÇÃO SOBRE OS PRINCIPAIS SINTOMAS DA DENGUE:
+            </p>
+
+            <ul>
+                <li>
+                    Febre alta;
+                </li>
+                <li>
+                    Dor de cabeça e no fundo dos olhos;
+                </li>
+                <li>
+                    Manchas vermelhas na pele;
+                </li>
+                <li>
+                    Enjoos e vomitos;
+                </li>
+                <li>
+                    Mal-estar e cansaço extremo;
+                </li>
+                <li>
+                    Dor abdominal em todo o corpo.
+                </li>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>
